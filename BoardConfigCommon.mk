@@ -3,8 +3,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-BOARD_VENDOR := motorola
-
 COMMON_PATH := device/motorola/sm7325-common
 
 # Architecture
