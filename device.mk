@@ -367,6 +367,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.tundra
 
+# Touch
+# PowerShare
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.tundra
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
