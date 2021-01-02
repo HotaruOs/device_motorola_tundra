@@ -261,7 +261,8 @@ PRODUCT_COPY_FILES += \
 # Moto hardware
 PRODUCT_PACKAGES += \
     MotoActions \
-    MotoCommonOverlay
+    MotoCommonOverlay \
+    TurboPowerOverlay
     
 $(call soong_config_set,surfaceflinger,udfps_lib,//$(LOCAL_PATH):libudfps_extension.tundra)
 
