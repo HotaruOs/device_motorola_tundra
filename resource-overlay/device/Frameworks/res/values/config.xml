@@ -58,6 +58,13 @@
           auto-brightness adjustment setting. -->
     <fraction name="config_autoBrightnessAdjustmentMaxGamma">150%</fraction>
      
+     <!-- Default screen brightness for VR setting. Target default value: 0x0BB for EVT1.1. -->
+    <!-- 8 bit brightness level of 6 corresponds to the 10 bit brightness level of 0x0B6,
+         8 bit brightness level of 7 corresponds to the 10 bit brightness level of 0x0C1 on EVT1.1. -->
+    <integer name="config_screenBrightnessForVrSettingDefault">7</integer>
+    <integer name="config_screenBrightnessForVrSettingMinimum">6</integer>
+    <integer name="config_screenBrightnessForVrSettingMaximum">7</integer>
+    
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
          The N entries of this array define N + 1 control points as follows:
          (1-based arrays)
@@ -291,6 +298,9 @@
     <!-- Default refresh rate in the zone defined by brightness and ambient thresholds.
           If non-positive, then the refresh rate is unchanged even if thresholds are configured. -->
     <integer name="config_defaultRefreshRateInZone">90</integer>
+    
+    <!-- Whether or not Wide Colour Gamut (wcg) mode should be enabled on this device -->
+    <bool name="config_enableWcgMode">true</bool>
     
      <!-- The default refresh rate -->
     <integer name="config_defaultRefreshRate">0</integer>
