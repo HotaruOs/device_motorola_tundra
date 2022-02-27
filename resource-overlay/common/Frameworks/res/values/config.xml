@@ -45,6 +45,10 @@
           that can be set by the user. -->
     <item name="config_screenBrightnessDozeFloat" format="float" type="dimen">0.0534833</item>
 
+    <!-- The maximum range of gamma adjustment possible using the screen
+          auto-brightness adjustment setting. -->
+    <fraction name="config_autoBrightnessAdjustmentMaxGamma">150%</fraction>
+     
   <!-- Maximum screen brightness allowed by the power manager.
           The user is forbidden from setting the brightness above this level. -->
     <item name="config_screenBrightnessSettingMaximumFloat" format="float" type="dimen">1.0</item>
