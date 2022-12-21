@@ -30,6 +30,10 @@ persist.data.df.iwlan_mux=9
 persist.data.df.mux_count=8
 persist.data.df.ul_mode=5
 
+# Display
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=20
+
 # DPM
 persist.vendor.dpm.feature=11
 
