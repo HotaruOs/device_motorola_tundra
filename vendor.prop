@@ -1,6 +1,9 @@
 # Camera
 persist.vendor.camera.physical.num=4
 
+# Display
+ persist.sys.brightness.low.gamma=true
+
 # NFC
 ro.vendor.hw.nfc=st
 
