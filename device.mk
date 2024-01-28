@@ -249,6 +249,24 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set,livedisplay_sdm,enable_dm,false)
 $(call soong_config_set,livedisplay_sysfs,enable_se,true)
 
+# Logging
+SPAMMY_LOG_TAGS := \
+    MiClstc \
+    MiStcImpl \
+    SDM \
+    SRE \
+    android.hardware.power-service-qti \
+    libsensor-boledalgo \
+    libsensor-parseRGB \
+    libsensor-qshcalapi \
+    sensors \
+    vendor.qti.hardware.display.composer-service
+
+ifneq ($(TARGET_BUILD_VARIANT),eng)
+PRODUCT_VENDOR_PROPERTIES += \
+    $(foreach tag,$(SPAMMY_LOG_TAGS),log.tag.$(tag)=E)
+endif
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/init.qti.media.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.media.sh \
