@@ -1174,3 +1174,20 @@ vendor/lib64/vendor.qti.hardware.vpp@2.0.so
 
 # Wifi
 vendor/bin/cnss-daemon
+
+# Media (Dolby) - From Moto G52
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|8215768638794162db3bb76e43045926fcbb4b0b
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
+vendor/etc/media_codecs_dolby_audio.xml|a794eb15fc198d0285510260025cd99b53fa174f
+vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml|beeea0a28e03ac9d4e2412bf9c40dba30c0a6e39
+vendor/lib64/libdapparamstorage.so|7549aeba2b7041b472ffc1f5fd39a56e4be64a2b
+vendor/lib64/libdeccfg.so|3a63582be7dea50ae10c0543f68e3bce592a3877
+vendor/lib64/libdlbdsservice.so|ccae69075705a71358e363eee973f32d76288696|72674895f948fd03a5cd39eb330306f846581d39
+vendor/lib64/libstagefright_soft_ac4dec.so|45b4a08175e6b5226b34e7275ce60d4b76033041|716ea184f4a1683ad44ae7bef164cad3c05855e0
+vendor/lib64/libstagefright_soft_ddpdec.so|7f1ee1710cdb5d4334613a765e04bec5d807fea2|45f2ee3050550dbbed87e58d264239cb0abb7c6c
+vendor/lib64/libstagefrightdolby.so|884abf462a46d0e0281c8157418c513cd4dc003a|86c42b4ea9e212c644de786315b5ba3e9f3a9fe4
+vendor/lib64/soundfx/libswdap.so|e996ee1d421b3b2cf74f3f3ed93bff067d83dddb|e996ee1d421b3b2cf74f3f3ed93bff067d83dddb
+vendor/lib64/soundfx/libswgamedap.so|c898fd5b51312c5fafa693ca037423c5bae23101
+vendor/lib64/soundfx/libswvqe.so|0319fb53da574f3ac7207e3cacf19ff807d0dfbb
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|92eb0a2b730810881288119fc4d038f52870acd1
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so;SYMLINK=system_ext/lib64/vendor.dolby.hardware.dms@2.0.so|a93b5cf33ae57387a2d32686520a0d1dd5d10dcc
