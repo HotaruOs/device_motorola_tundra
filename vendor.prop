@@ -177,6 +177,10 @@ vendor.display.enable_hdr10_gpu_target=1
 vendor.display.enable_optimize_refresh=1
 vendor.display.hwc_disable_hdr=0
 vendor.display.use_smooth_motion=1
+vendor.display.enable_allow_idle_fallback=1
+vendor.display.disable_idle_time_video=1
+vendor.display.disable_idle_time_hdr=1
+vendor.display.enable_camera_smooth=1
 
 # DPM
 persist.vendor.dpm.feature=11
