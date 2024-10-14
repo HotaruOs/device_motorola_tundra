@@ -207,6 +207,7 @@ persist.vendor.ims.playout_delay=50
 persist.vendor.ims.vt.enableadb=1
 
 # Media
+persist.mm.enable.prefetch=true
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
 media.stagefright.thumbnail.prefer_hw_codecs=true
