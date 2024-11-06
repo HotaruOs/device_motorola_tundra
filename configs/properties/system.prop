@@ -34,6 +34,11 @@ persist.data.df.ul_mode=5
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=20
 
+# QTI Mem Optimisation
+persist.vendor.sys.memplus.enable=false
+ro.vendor.qti.sys.fw.bg_apps_limit=30
+ro.vendor.qti.sys.fw.bservice_limit=60
+
 # DPM
 persist.vendor.dpm.feature=11
 
