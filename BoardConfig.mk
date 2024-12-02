@@ -45,6 +45,9 @@ BOARD_SUPPORTS_OPENSOURCE_STHAL := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
 
+# Dolby
+include hardware/motorola/dolby/BoardConfigVendor.mk
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := tundra
 TARGET_NO_BOOTLOADER := true
