@@ -54,6 +54,7 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     LineageSystemUIDevice \
     SettingsResDevice \
+    NcmTetheringOverlay \
     SystemUIResCommon \
     TelephonyResCommon \
     TelephonyResProduct \
