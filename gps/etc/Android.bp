@@ -1,10 +1,4 @@
 prebuilt_etc {
-    name: "apdr.conf",
-    vendor: true,
-    src: "apdr.conf",
-}
-
-prebuilt_etc {
 
     name: "flp.conf",
     vendor: true,
@@ -61,11 +55,4 @@ prebuilt_etc {
     vendor: true,
     sub_dir: "seccomp_policy",
     src: "seccomp_policy/gnss@2.0-xtra-daemon.policy",
-}
-
-prebuilt_etc {
-    name: "gnss@2.0-xtwifi-client.policy",
-    vendor: true,
-    sub_dir: "seccomp_policy",
-    src: "seccomp_policy/gnss@2.0-xtwifi-client.policy",
 }

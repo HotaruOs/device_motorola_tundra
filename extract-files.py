@@ -38,8 +38,6 @@ lib_fixups: lib_fixups_user_type = {
         'libmmosal',
         'vendor.qti.diaghal@1.0',
         'vendor.qti.hardware.fm@1.0',
-        'vendor.qti.hardware.qccsyshal@1.0',
-        'vendor.qti.hardware.qccvndhal@1.0',
         'vendor.qti.hardware.wifidisplaysession@1.0',
         'vendor.qti.imsrtpservice@3.0',
         'vendor.qti.qspmhal@1.0',
