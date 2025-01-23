@@ -154,6 +154,7 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Sepolicy
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
