@@ -69,6 +69,17 @@ on init
     chmod 0660 /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
     start logd
 
+on property:vendor.setup.power=1
+    # Setup permission for Power HAL
+    chown system system /dev/stune/top-app/schedtune.boost
+    chown system system /dev/cpu_dma_latency
+    chmod 0664 /dev/stune/top-app/schedtune.boost
+    chmod 0664 /dev/cpu_dma_latency
+    write /sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/min_freq 9155
+    write /dev/cpuctl/foreground/cpu.uclamp.min 0
+    # Enable bus-dcvs
+    write /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/early_wakeup 1
+
 on early-fs
     start vold
 
