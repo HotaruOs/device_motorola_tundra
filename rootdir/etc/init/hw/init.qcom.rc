@@ -166,6 +166,9 @@ on boot
 
     setprop net.tcp.2g_init_rwnd 10
 
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
+
     # To prevent out of order acknowledgements from making
     # connection tracking to treat them as not belonging to
     # the connection they belong to.
