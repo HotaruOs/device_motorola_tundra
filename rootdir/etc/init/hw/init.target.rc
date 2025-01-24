@@ -69,6 +69,13 @@ on init
     chmod 0660 /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
     start logd
 
+on property:vendor.setup.power=1
+    # Setup permission for Power HAL
+    write /sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/min_freq 9155
+
+    # Enable bus-dcvs
+    write /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/early_wakeup 1
+
 on early-fs
     start vold
 
