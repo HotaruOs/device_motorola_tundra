@@ -179,8 +179,11 @@ echo 10 10 10 10 10 10 10 95 > /proc/sys/kernel/sched_coloc_busy_hyst_cpu_busy_p
 echo 325 > /proc/sys/kernel/walt_low_latency_task_threshold
 
 # cpuset parameters
-echo 0-3 > /dev/cpuset/background/cpus
+echo 0-1 > /dev/cpuset/background/cpus
 echo 0-3 > /dev/cpuset/system-background/cpus
+echo 0-3 > /dev/cpuset/restricted/cpus
+echo 1-2 > /dev/cpuset/audio-app/cpus
+echo 0-6 > /dev/cpuset/foreground/cpus
 
 # Turn off scheduler boost at the end
 echo 0 > /proc/sys/kernel/sched_boost
@@ -365,5 +368,22 @@ case "$console_config" in
 		echo "Enable console config to $console_config"
 	;;
 esac
+
+# Runtime fs tuning
+echo 128 > /sys/block/sda/queue/read_ahead_kb
+echo 128 > /sys/block/sda/queue/nr_requests
+echo 1 > /sys/block/sda/queue/iostats
+echo 128 > /sys/block/dm-0/queue/read_ahead_kb
+echo 128 > /sys/block/dm-1/queue/read_ahead_kb
+echo 128 > /sys/block/dm-2/queue/read_ahead_kb
+echo 128 > /sys/block/dm-3/queue/read_ahead_kb
+echo 128 > /sys/block/dm-4/queue/read_ahead_kb
+echo 128 > /sys/block/dm-5/queue/read_ahead_kb
+echo 128 > /sys/block/dm-6/queue/read_ahead_kb
+echo 128 > /sys/block/dm-7/queue/read_ahead_kb
+echo 128 > /sys/block/dm-8/queue/read_ahead_kb
+echo 128 > /sys/block/dm-9/queue/read_ahead_kb
+
+
 
 setprop vendor.post_boot.parsed 1
