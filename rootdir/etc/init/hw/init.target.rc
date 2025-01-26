@@ -79,6 +79,8 @@ on property:vendor.setup.power=1
     write /dev/cpuctl/foreground/cpu.uclamp.min 0
     # Enable bus-dcvs
     write /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/early_wakeup 1
+    # Setup foreground cpuset for display composer.
+    write /dev/cpuset/foreground/cpus 0-6
 
 on early-fs
     start vold
@@ -210,9 +212,6 @@ service fan_control_turn_off /vendor/bin/fan_control 0
     user root
     disabled
     oneshot
-
-    # Setup foreground cpuset for display composer.
-    write /dev/cpuset/foreground/cpus 0-6
 
 service vendor.qti.hardware.display.composer /vendor/bin/hw/vendor.qti.hardware.display.composer-service
     override
