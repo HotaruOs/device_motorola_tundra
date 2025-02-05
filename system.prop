@@ -45,14 +45,6 @@ persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 ro.qcom.ims.use_moto_vt_ext=true
 
-# Infinity-X AboutPhone
-ro.infinity.soc=Snapdragon 888+
-ro.infinity.battery=4400mAh
-ro.infinity.display=1080x2400, 144Hz
-ro.infinity.camera=50MP + 13MP + 2MP, 32MP
-ro.infinity.ram=8 GB
-ro.infinity.rom=128 GB
-
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
