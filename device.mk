@@ -282,6 +282,10 @@ PRODUCT_ENABLE_UFFD_GC := false
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
+    
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.1-service.motorola_lahaina
 
 # Media
 PRODUCT_PACKAGES += \
