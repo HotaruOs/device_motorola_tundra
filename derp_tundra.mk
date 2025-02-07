@@ -12,12 +12,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/tundra/device.mk)
 
 # Inherit common infinity configurations
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 
-PRODUCT_NAME := lineage_tundra
+PRODUCT_NAME := derp_tundra
 PRODUCT_DEVICE := tundra
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
@@ -30,25 +30,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
  
-# Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1080
-
-# Device Identifier 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="Snapdragon 888+" \
-    RisingMaintainer="HotaruOs"
-
-# Gapps:
-WITH_GMS := true
-RISING_PACKAGE_TYPE := GAPPS
-TARGET_DEFAULT_PIXEL_LAUNCHER := true
-
-# UDFPS
-TARGET_HAS_UDFPS := true
-EXTRA_UDFPS_ANIMATIONS := true
-
-# Blur 
-TARGET_ENABLE_BLUR := true
-
-# Camera 
-PRODUCT_NO_CAMERA := true
