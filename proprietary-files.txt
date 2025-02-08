@@ -310,7 +310,7 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar
 # MotCamera4 - from tundra -
 product/app/MotCamera3AI/MotCamera3AI.apk;PRESIGNED|d4eaca83db14aca9ffff7691cff062e1dd0ed002
 product/etc/init/init.motcamera3.lens.rc|293260214b3b60496fb61709276295f17036f506
-product/priv-app/MotCamera4/MotCamera4.apk|5cd349184b9fe51ea5d3914e4f24ba85c869311f
+product/priv-app/MotCamera4/MotCamera4.apk;OVERRIDES=Aperture,Camera,Camera2,Flash,GoogleCameraGo|5cd349184b9fe51ea5d3914e4f24ba85c869311f|0201b648f3b692ab406deb051fd12a593ee6e1a1
 
 # MotCamera4 - Permissions - from tundra -
 product/etc/permissions/com.motorola.camera3.content.ai.xml|261f857c62c97286f492b3f5c69ff11226a06af0
