@@ -30,10 +30,12 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     FrameworksResCommon \
+    FrameworksResProduct \
+    FrameworksResTarget \
     SystemUIResCommon \
     TelephonyResCommon \
+    TelephonyResProduct \
     WifiResCommon \
-    FrameworksResTarget \
     WifiResTarget
 
 # A/B
