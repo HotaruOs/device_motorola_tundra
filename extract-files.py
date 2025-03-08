@@ -46,7 +46,6 @@ lib_fixups: lib_fixups_user_type = {
         'libofflinelog',
         'libqsap_sdk',
         'libthermalclient',
-        'libwpa_client',
     ): lib_fixup_remove,
 }
 
