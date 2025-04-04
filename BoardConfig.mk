@@ -190,6 +190,9 @@ include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 PRODUCT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
+BOARD_VENDOR_SEPOLICY_DIRS += \
+   $(DEVICE_PATH)/sepolicy/vendor \
+   $(DEVICE_PATH)/sepolicy/dolby
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
