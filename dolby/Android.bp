@@ -20,7 +20,7 @@ android_app {
         "SettingsLib",
         "SpaLib",
         "androidx.activity_activity-compose",
-        "androidx.compose.material3_material3",
+        "com.google.android.material_material",
         "androidx.compose.runtime_runtime",
         "androidx.preference_preference",
     ],
