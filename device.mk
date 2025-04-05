@@ -104,7 +104,9 @@ PRODUCT_PACKAGES += \
     firmware_aw_cali.bin_symlink \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    sound_trigger.primary.lahaina
+    sound_trigger.primary.lahaina \
+    libtinycompress \
+    MotoDolby
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/audio/sku_yupik/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_yupik/audio_io_policy.conf \
