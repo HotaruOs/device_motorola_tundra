@@ -1,3 +1,6 @@
+# Display
+sys.brightness.disable_gamma_conversion=true
+
 # Audio
 audio.deep_buffer.media=true
 audio.offload.disable=false
