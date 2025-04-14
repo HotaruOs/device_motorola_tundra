@@ -1,3 +1,11 @@
+# Google
+ro.opa.device_model_id=motorola-tundra
+ro.com.google.ime.kb_pad_port_l=11
+ro.com.google.ime.kb_pad_port_r=11
+
+# Motorola
+ro.mot.build.customerid=global
+
 # Audio
 audio.record.delay=50
 

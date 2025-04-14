@@ -1,3 +1,9 @@
+# Camera
+persist.vendor.camera.physical.num=4
+
+# NFC
+ro.vendor.hw.nfc=st
+
 # Audio
 aaudio.hw_burst_min_usec=2000
 aaudio.mmap_exclusive_policy=2
@@ -289,7 +295,7 @@ sys.vendor.shutdown.waittime=500
 
 # SOC
 ro.soc.manufacturer=QTI
-ro.soc.model=SM7325
+ro.soc.model=SM8350
 
 # Stagefright
 debug.stagefright.c2inputsurface=-1
