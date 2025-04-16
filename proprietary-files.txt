@@ -463,20 +463,6 @@ vendor/lib64/libadsprpc.so
 vendor/lib64/libaudcal.so
 vendor/lib64/libqtigef.so
 
-# Audio - soundfx
-vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libmmieffectswrapper.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
-vendor/lib/soundfx/libshoebox.so
-vendor/lib/soundfx/libspeakerbundle.so
-vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcreverb.so
-vendor/lib64/soundfx/libqcvirt.so
-vendor/lib64/soundfx/libshoebox.so
-
 # Authsecret
 vendor/bin/hw/android.hardware.authsecret@1.0-service-qti
 
