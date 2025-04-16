@@ -645,7 +645,7 @@ vendor/firmware/evass.b19
 vendor/firmware/evass.mbn
 vendor/firmware/evass.mdt
 
-# Dolby - from OnePlus 9RT MT2111_14.0.0.730(EX01)
+# Dolby
 odm/bin/hw/vendor.dolby_v3_6.hardware.dms360@2.0-service|7951f0ede5108f0080bb8abb18651058db9e46ae
 odm/etc/dolby/multimedia_dolby_dax_default.xml|be49c4cde1bc41f67fbfa2c49ba6d8f4e40eb8dc
 odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc|5da96cf855061860f27dff6399505f8d1f1daeee
@@ -663,7 +663,7 @@ odm/lib64/libdlbdsservice_v3_6.so|a81056b8a7cf90df84368b8086691f38950613fc|a8105
 odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so|5b5f4b383c03a6aaa759b1cc7f6f0aea7d1f6ba0
 odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0.so|e62f04117fead61eea7f2593e7ccbb565436a0ee
 
-# Dolby - from OnePlus 9RT MT2111_14.0.0.730(EX01)
+# Dolby
 odm/bin/hw/vendor.dolby_sp.hardware.dmssp@2.0-service|1240cecce2ad8943c2aa5b96381ebeb5e1bac43d
 odm/bin/hw/vendor.dolby_sp.media.c2@1.0-service|474935cbe8584567aa932f4284409e81e60eaae2|474935cbe8584567aa932f4284409e81e60eaae2
 odm/etc/init/vendor.dolby.media.c2@1.0-service.rc|6af989419070ea6b4646f47ab78849d7549abda3
@@ -682,6 +682,13 @@ odm/lib64/libui.so:odm/lib64/libui_sp.so;FIX_SONAME|ff7cdbb549a1a7972f37a99f4581
 odm/lib64/vendor.dolby_sp.hardware.dmssp@2.0-impl.so|b51e6a885a738023ce6ec97b702d6733b70d0a15
 odm/lib64/vendor.dolby_sp.hardware.dmssp@2.0.so|2173d68717cbcdaab98e1cf15a0d410ea00d0271
 vendor/lib64/libcodec2_vndk.so:odm/lib64/libcodec2_vndk_sp.so;FIX_SONAME|156d0dc125c22b48308143e6566f747b5a1270bc|156d0dc125c22b48308143e6566f747b5a1270bc
+
+# DaxUi
+system_ext/priv-app/daxService/daxService.apk
+system_ext/priv-app/DolbySound/DolbySound.apk
+system_ext/etc/sysconfig/config-com.dolby.daxservice.xml
+system_ext/etc/sysconfig/config-com.dolby.daxappui2.xml
+system_ext/etc/permissions/privapp-com.dolby.daxservice.xml
 
 # Diag
 system_ext/lib/vendor.qti.diaghal@1.0.so
