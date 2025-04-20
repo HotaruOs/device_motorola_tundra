@@ -864,13 +864,13 @@ vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 
 # Graphics - Adreno firmware
-vendor/firmware/a615_zap.b00
-vendor/firmware/a615_zap.b01
-vendor/firmware/a615_zap.b02
-vendor/firmware/a615_zap.elf
-vendor/firmware/a615_zap.mdt
-vendor/firmware/a619_gmu.bin
-vendor/firmware/a630_sqe.fw
+vendor/firmware/a660_zap.b00
+vendor/firmware/a660_zap.b01
+vendor/firmware/a660_zap.b02
+vendor/firmware/a660_zap.elf
+vendor/firmware/a660_zap.mdt
+vendor/firmware/a660_gmu.bin
+vendor/firmware/a660_sqe.fw
 vendor/gpu/kbc/sequence_manifest.bin
 vendor/gpu/kbc/unified_kbcs_32.bin
 vendor/gpu/kbc/unified_kbcs_64.bin
