@@ -844,6 +844,14 @@ vendor/lib/libkcl.so
 vendor/lib/libkernelmanager.so
 vendor/lib/libllvm-glnext.so
 vendor/lib/libllvm-qcom.so
+vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so
+vendor/lib/libOpenCL_adreno.so
+vendor/lib/libadreno_compiler_cl.so
+vendor/lib/libllvm-qgl.so
+vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so
+vendor/lib64/libOpenCL_adreno.so
+vendor/lib64/libadreno_compiler_cl.so
+vendor/lib64/libllvm-qgl.so
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so
 vendor/lib64/egl/libGLESv1_CM_adreno.so
