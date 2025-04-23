@@ -18,7 +18,7 @@ PRODUCT_NAME := lineage_tundra
 PRODUCT_DEVICE := tundra
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := motorola edge 30 fusion
+PRODUCT_MODEL := Edge S30 Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
