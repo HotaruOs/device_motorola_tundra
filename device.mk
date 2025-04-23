@@ -126,6 +126,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/configs/media/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
 
+# Refresh rate override feature
+ PRODUCT_PRODUCT_PROPERTIES += \
+     ro.surface_flinger.enable_frame_rate_override=true
+
 # Boot control
 PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti \
