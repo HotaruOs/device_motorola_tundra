@@ -256,6 +256,8 @@ PRODUCT_PACKAGES += \
     MotoActions \
     MotoCommonOverlay
     
+$(call soong_config_set,surfaceflinger,udfps_lib,//$(LOCAL_PATH):libudfps_extension.tundra)
+
 # GMS
 ifeq ($(WITH_GMS),true)
 GMS_MAKEFILE=gms_minimal.mk
