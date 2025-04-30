@@ -71,7 +71,7 @@
         <item>1250</item>
         <item>3500</item>
         <item>5500</item>
-	<item>10000</item>
+	    <item>10000</item>
     </integer-array>
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
@@ -98,7 +98,7 @@
         <item>192</item>
         <item>252</item>
         <item>500</item>
-	<item>1100</item>
+    	<item>1100</item>
     </integer-array>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
@@ -131,18 +131,18 @@
           For example, no higher refresh rate if
               display brightness <= disp0 && ambient brightness <= amb0
               || display brightness <= disp1 && ambient brightness <= amb1 -->
-     <integer-array name="config_brightnessThresholdsOfPeakRefreshRate">
-         <item>10</item> <!-- 33% UI brightness -->
-         <item>14</item> <!-- 40% UI brightness -->
-     </integer-array>
-     <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
-         <item>-1</item>
-         <item>20</item>
-     </integer-array>
+    <integer-array name="config_brightnessThresholdsOfPeakRefreshRate">
+        <item>10</item> <!-- 33% UI brightness -->
+        <item>14</item> <!-- 40% UI brightness -->
+    </integer-array>
+    <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
+        <item>-1</item>
+        <item>20</item>
+    </integer-array>
  
-     <!-- Default refresh rate in the zone defined by brightness and ambient thresholds.
+    <!-- Default refresh rate in the zone defined by brightness and ambient thresholds.
           If non-positive, then the refresh rate is unchanged even if thresholds are configured. -->
-     <integer name="config_defaultRefreshRateInZone">90</integer>
+    <integer name="config_defaultRefreshRateInZone">90</integer>
 
     <!-- MMS user agent string -->
     <string name="config_mms_user_agent" translatable="false">motorolaedge30fusion</string>
