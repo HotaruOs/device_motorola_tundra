@@ -192,6 +192,7 @@ PRODUCT_PACKAGES += \
     sap.conf \
     xtwifi.conf
     
+# Keymaster / Gatekeeper 
 PRODUCT_PACKAGES += \
      android.hardware.gatekeeper@1.0.vendor \
      android.hardware.keymaster@4.1.vendor
