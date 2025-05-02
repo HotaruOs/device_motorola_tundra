@@ -191,6 +191,10 @@ PRODUCT_PACKAGES += \
     lowi.conf \
     sap.conf \
     xtwifi.conf
+    
+PRODUCT_PACKAGES += \
+     android.hardware.gatekeeper@1.0.vendor \
+     android.hardware.keymaster@4.1.vendor
 
 # Health
 PRODUCT_PACKAGES += \
