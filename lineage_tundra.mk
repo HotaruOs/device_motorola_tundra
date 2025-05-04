@@ -42,7 +42,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
  
  # Define small and big core groups
  AXION_CPU_SMALL_CORES := 0,1,2,3
- AXION_CPU_BIG_CORES := 4,5,6
+ AXION_CPU_BIG_CORES := 4,5,6,7
  AXION_MODERN_KERNEL := true
  
  # AxionOS scheduling properties
