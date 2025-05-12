@@ -870,6 +870,10 @@ vendor/lib64/libkcl.so
 vendor/lib64/libkernelmanager.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
+vendor/etc/permissions/android.hardware.vulkan.version-1_1.xml  
+vendor/etc/permissions/android.hardware.vulkan.version-1_3.xml  
+vendor/etc/permissions/android.software.opengles.deqp.level.xml  
+vendor/etc/permissions/android.software.vulkan.deqp.level.xml
 
 # Graphics - Adreno firmware
 vendor/firmware/a660_zap.b00
