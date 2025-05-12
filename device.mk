@@ -125,6 +125,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/configs/media/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
 
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 # Boot control
 PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti \
