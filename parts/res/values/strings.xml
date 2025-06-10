@@ -34,4 +34,20 @@
     <string name="game_bar_tile_label">GameBar</string>
     <string name="game_bar_tile_description">Toggle the game overlay</string>
 
+    <!-- Charging information tile -->
+    <string name="charging_tile_label">Charging Speed</string>
+    <string name="charging_tile_information">Shows real-time charging/discharging power</string>
+    
+        <!-- Tile states -->
+        <string name="charging_tile_charging">Charging</string>
+        <string name="charging_tile_discharging">Discharging</string>
+        <string name="charging_tile_not_charging">Not Charging</string>
+        <string name="charging_tile_error">Error</string>
+        
+        <!-- Content descriptions for accessibility -->
+        <string name="charging_tile_desc_charging">Charging at %1$s watts, %2$s amps, %3$s volts</string>
+        <string name="charging_tile_desc_discharging">Discharging at %1$s watts</string>
+        <string name="charging_tile_desc_not_charging">Battery not charging or discharging</string>
+        <string name="charging_tile_desc_error">Unable to read charging information</string>
+
 </resources>
