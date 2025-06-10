@@ -31,8 +31,6 @@ import android.provider.Settings;
 import android.util.Log;
 import android.view.Display;
 
-import org.lineageos.settings.refreshrate.RefreshUtils;
-
 public class BootCompletedReceiver extends BroadcastReceiver {
     private static final String TAG = "Parts";
     private static final boolean DEBUG = true;
@@ -69,7 +67,5 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     private void startServices(Context context) {
         if (DEBUG) Log.i(TAG, "Starting services...");
 
-        // Start Refresh Rate Service
-        RefreshUtils.startService(context);
     }
 }
