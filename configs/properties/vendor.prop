@@ -197,6 +197,7 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 vendor.gatekeeper.disable_spu=true
 
 # Graphics
+debug.sf.enable_transaction_tracing=
 debug.sf.disable_client_composition_cache=1
 debug.sf.disable_elapsetime_if_has_virtual=1
 debug.sf.enable_advanced_sf_phase_offset=1
