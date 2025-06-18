@@ -23,6 +23,6 @@ PRODUCT_MODEL := Edge S30 Pro
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="tundra_g-user 14 U1SJS34.2-92-10-5 ee7f9e-2bf813 release-keys" \
-    BuildFingerprint=motorola/tundra_g/tundra:14/U1SJS34.2-92-10-5/ee7f9e-2bf813:user/release-keys \
+    BuildDesc="tundra_g-user 14 U1SJS34.2-92-10-6 c9587-03599 release-keys" \
+    BuildFingerprint=motorola/tundra_g/tundra:14/U1SJS34.2-92-10-6/c9587-03599:user/release-keys \
     DeviceProduct=tundra_g
