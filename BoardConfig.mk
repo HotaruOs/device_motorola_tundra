@@ -74,6 +74,9 @@ AB_OTA_PARTITIONS += \
     vendor \
     vendor_boot
 
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
+
 # Audio
 AUDIO_FEATURE_ENABLED_AHAL_EXT := false
 AUDIO_FEATURE_ENABLED_DLKM := true
