@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from edge 30 fusion (14 U1SJS34.2-92-10-5 ee7f9e-2bf813).
+## are from edge 30 fusion (14 U1SJS34.2-92-10-6 c9587-03599).
 ## RETAIL variant
 
 # Current blobs with ELF checks disabled:
