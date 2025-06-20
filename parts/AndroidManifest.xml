@@ -35,6 +35,7 @@
     <uses-permission android:name="android.permission.BIND_QUICK_SETTINGS_TILE" />
     <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <uses-sdk
         android:minSdkVersion="24"
@@ -83,20 +84,59 @@
             </intent-filter>
         </activity>
 
-        <!-- Charging bypass service -->
-	    <activity
-    	    android:name=".charge.ChargeActivity"
-            android:label="@string/charge_bypass_title">
-    	    <intent-filter>
+        <!-- Charging Bypass Activity -->
+        <activity
+            android:name=".charge.ChargeActivity"
+            android:label="@string/charge_bypass_title"
+            android:exported="true">
+            <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
             <meta-data
-        	android:name="com.android.settings.category"
-        	android:value="com.android.settings.category.ia.battery" />
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.battery" />
             <meta-data
-       		android:name="com.android.settings.summary"
-        	android:resource="@string/charge_bypass_summary" />
-	    </activity>
+                android:name="com.android.settings.summary"
+                android:resource="@string/charge_bypass_summary" />
+        </activity>
+
+        <!-- Charging Bypass Monitoring Service -->
+        <service
+            android:name=".charge.ChargeBatteryMonitorService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="battery_optimization" />
+        </service>
+
+        <!-- Charging Bypass Boot Receiver -->
+        <receiver
+            android:name=".charge.ChargeReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Charging Bypass Quick Settings Tile -->
+        <service
+            android:name=".charge.ChargeQSTile"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@drawable/ic_charge_bypass"
+            android:label="@string/charge_bypass_qs_tile_label"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.ACTIVE_TILE"
+                android:value="false" />
+        </service>
 
         <!-- Charging information tile service -->
         <service

@@ -1,8 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Main bypass toggle -->
     <SwitchPreference
-        android:key="bypass_charge"
-        android:title="@string/charge_bypass_title"
-        android:summary="@string/charge_bypass_summary"
+        android:key="bypass_charge_master"
+        android:title="@string/charge_bypass_master_title"
+        android:summary="@string/charge_bypass_master_summary"
         android:defaultValue="false" />
+    
+    <!-- Configuration category -->
+    <PreferenceCategory
+        android:key="bypass_configuration_category"
+        android:title="@string/charge_bypass_configuration_title">
+        
+        <!-- Manual bypass option -->
+        <CheckBoxPreference
+            android:key="bypass_mode_manual"
+            android:title="@string/charge_bypass_manual_title"
+            android:summary="@string/charge_bypass_manual_summary"
+            android:defaultValue="true" />
+        
+        <!-- Smart bypass option -->
+        <CheckBoxPreference
+            android:key="bypass_mode_smart"
+            android:title="@string/charge_bypass_smart_title"
+            android:summary="@string/charge_bypass_smart_summary"
+            android:defaultValue="false" />
+    
+    </PreferenceCategory>
+    
+    <!-- Battery target slider (only visible in smart mode) -->
+    <org.lineageos.settings.charge.MinMaxSeekBarPreference
+        android:key="battery_target_slider"
+        android:title="@string/charge_bypass_battery_target_title"
+        android:summary="@string/charge_bypass_battery_target_summary"
+        android:min="50"
+        android:max="100"
+        android:defaultValue="80"
+        android:dependency="bypass_mode_smart" />
+
 </PreferenceScreen>
