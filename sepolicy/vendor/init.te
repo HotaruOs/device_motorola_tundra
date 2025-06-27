@@ -1,1 +1,3 @@
 allow init vendor_sysfs_vibrator:file create_file_perms;
+
+dontaudit init debugfs_tracing_debug:dir mounton;

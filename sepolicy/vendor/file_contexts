@@ -17,5 +17,9 @@
 # LiveDisplay
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.motorola_lahaina    u:object_r:hal_lineage_livedisplay_qti_exec:s0
 
+# Touchscreen
+/sys/devices/platform/soc/a94000.i2c/i2c-2/2-0049/single_click                                u:object_r:vendor_sysfs_touchpanel:s0
+/sys/devices/platform/soc/a94000.i2c/i2c-2/2-0049/double_click                                u:object_r:vendor_sysfs_touchpanel:s0
+
 # Vibrator
 /sys/devices/platform/soc/990000.i2c/i2c-1/1-005a/leds/vibrator(/.*)?                     u:object_r:vendor_sysfs_vibrator:s0
