@@ -26,3 +26,26 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="tundra_g-user 14 U1SJS34.2-92-10-6 c9587-03599 release-keys" \
     BuildFingerprint=motorola/tundra_g/tundra:14/U1SJS34.2-92-10-6/c9587-03599:user/release-keys \
     DeviceProduct=tundra_g
+
+# Lunch banner maintainer variable
+RISING_MAINTAINER="HotaruOs"
+
+# Chipset/Maintainer properties
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 888+" \
+    RisingMaintainer="HotaruOs"
+
+RISING_MAINTAINER := HotaruOs
+
+# Disable/enable blur support, false by default
+TARGET_ENABLE_BLUR := true
+
+# Whether to ship aperture camera, false by default
+PRODUCT_NO_CAMERA := false
+
+# Whether to ship lawnchair launcher, false by default
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
+
+# CORE build flags
+WITH_GMS := true
+TARGET_USES_PICO_GAPPS := true
