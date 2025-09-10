@@ -113,9 +113,6 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
-ifeq ($(TARGET_HAS_SNXXX_NFC),)
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest_nfc.xml
-endif
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
