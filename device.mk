@@ -199,6 +199,7 @@ PRODUCT_PACKAGES += \
     init.mmi.charge_only.rc \
     init.mmi.chipset.rc \
     init.mmi.overlay.rc \
+    init.mmi.dalvik.rc \
     init.qcom.rc \
     init.qcom.recovery.rc \
     init.qti.kernel.rc \
