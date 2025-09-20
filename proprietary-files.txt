@@ -1,6 +1,4 @@
-## All proprietary files from this list, unless pinned and noted otherwise,
-## are from edge 30 fusion (14 U1SJS34.2-92-10-6 c9587-03599).
-## RETAIL variant
+# All unpinned blobs are extracted from tundra_g U1SJS34.2-92-10-9
 
 # Current blobs with ELF checks disabled:
 # libqti-perfd, libgameoptfeature, thermal-engine depends on libthermalclient, which is device specific
