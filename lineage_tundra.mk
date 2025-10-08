@@ -26,3 +26,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="tundra_g-user 14 U1SJS34.2-92-10-6 c9587-03599 release-keys" \
     BuildFingerprint=motorola/tundra_g/tundra:14/U1SJS34.2-92-10-6/c9587-03599:user/release-keys \
     DeviceProduct=tundra_g
+
+TARGET_HAS_UDFPS := true

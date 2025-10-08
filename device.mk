@@ -79,6 +79,9 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# gapps
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
@@ -480,6 +483,9 @@ PRODUCT_PACKAGES += \
     vendor.lineage.touch-service.motorola
 
 $(call soong_config_set, MOTOROLA_TOUCH, HIGH_TOUCH_POLLING_PATH, /sys/class/touchscreen/primary/interpolation)
+
+# Private keys
+-include vendor/evolution-priv/keys/keys.mk
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/motorola/tundra/tundra-vendor.mk)
