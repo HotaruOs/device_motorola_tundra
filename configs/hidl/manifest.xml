@@ -167,11 +167,6 @@
         <fqname>@1.0::IFmHci/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.iop</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.0::IIop/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.qconfig</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IQConfig/default</fqname>
