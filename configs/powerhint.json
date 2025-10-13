@@ -147,6 +147,15 @@
       "ResetOnInit": true
     },
     {
+      "Name": "SchedPreferSpread",
+      "Path": "/proc/sys/kernel/sched_prefer_spread",
+      "Values": [
+        "3",
+        "0"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "SchedBusyHystNs",
       "Path": "/proc/sys/kernel/sched_busy_hyst_ns",
       "Values": [
@@ -280,14 +289,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "DisplayWakeup",
-      "Path": "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/early_wakeup",
-      "Values": [
-        "1",
-        "0"
-      ]
-    },
-    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
@@ -304,14 +305,6 @@
         ""
       ],
       "Type": "Property"
-    },
-    {
-      "Name": "DoubleTapToWake",
-      "Path": "/proc/touchpanel/double_tap_enable",
-      "Values": [
-        "1",
-        "0"
-      ]
     }
   ],
   "Actions": [
@@ -368,6 +361,12 @@
       "Node": "UclampTALatency",
       "Duration": 0,
       "Value": "1"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "SchedPreferSpread",
+      "Duration": 0,
+      "Value": "3"
     },
     {
       "PowerHint": "INTERACTION",
@@ -554,36 +553,6 @@
       "Node": "GPUMinFreq",
       "Duration": 0,
       "Value": "540000000"
-    },
-    {
-      "PowerHint": "DISPLAY_UPDATE_IMMINENT",
-      "Node": "DisplayWakeup",
-      "Duration": 60,
-      "Value": "1"
-    },
-    {
-      "PowerHint": "Flipendo",
-      "Node": "CPULittleClusterMaxFreq",
-      "Duration": 0,
-      "Value": "1612800"
-    },
-    {
-      "PowerHint": "Flipendo",
-      "Node": "CPUBigClusterMaxFreq",
-      "Duration": 0,
-      "Value": "1324800"
-    },
-    {
-      "PowerHint": "Flipendo",
-      "Node": "CPUBigPlusClusterMaxFreq",
-      "Duration": 0,
-      "Value": "1555200"
-    },
-    {
-      "PowerHint": "DOUBLE_TAP_TO_WAKE",
-      "Node": "DoubleTapToWake",
-      "Duration": 0,
-      "Value": "1"
     }
   ]
 }
