@@ -158,7 +158,7 @@ echo 1 > /sys/devices/system/cpu/cpu7/core_ctl/task_thres
 # Setting to 1 by default which means there should be at least
 # 4 tasks eligible to run on gold cluster (tasks running on gold cores
 # plus misfit tasks on silver cores) to trigger assitance from gold+.
-echo 1 > /sys/devices/system/cpu/cpu7/core_ctl/nr_prev_assist_thresh
+echo 0 > /sys/devices/system/cpu/cpu7/core_ctl/nr_prev_assist_thresh
 
 # Disable Core control on silver
 echo 0 > /sys/devices/system/cpu/cpu0/core_ctl/enable
