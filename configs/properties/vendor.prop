@@ -226,6 +226,8 @@ vendor.gralloc.disable_ubwc=0
 vendor.hw.sf.IdleLazyResetThresholdT=1000
 ro.surface_flinger.support_kernel_idle_timer=true
 debug.sf.enable_adpf_cpu_hint=true
+debug.hwui.renderer=skiagl
+debug.hwui.skia_atrace_enabled=false
 
 # IMS
 persist.vendor.ims.cam_sensor_delay=20

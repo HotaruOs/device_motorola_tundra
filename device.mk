@@ -214,7 +214,6 @@ $(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/etc/init/hw/*.rc),\
         $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/$(notdir $f)))
 
 # HWUI
-TARGET_USES_VULKAN := true
 HWUI_COMPILE_FOR_PERF := true
 
 # Always preopt extracted APKs to prevent extracting out of the APK for gms modules
