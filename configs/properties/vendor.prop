@@ -224,6 +224,8 @@ ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 vendor.gralloc.disable_ubwc=0
 vendor.hw.sf.IdleLazyResetThresholdT=1000
+debug.hwui.renderer=skiagl
+debug.hwui.skia_atrace_enabled=false
 
 # IMS
 persist.vendor.ims.cam_sensor_delay=20
