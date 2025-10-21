@@ -478,9 +478,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine-tundra-game-perf.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-tundra.conf
-
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \

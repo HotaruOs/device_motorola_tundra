@@ -373,6 +373,9 @@ vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/sns_wrist_pedo.json
 vendor/etc/sensors/sns_reg_config
 
+# Thermal engine - configs
+vendor/etc/thermal-engine-tundra.conf
+
 # Touchscreen firmware
 vendor/firmware/goodix-csot-gt9916S-2206120a-62adb7ba-tundra.bin
 vendor/firmware/goodix-tianma-gt9916S-2206120a-62ad7261-tundra.bin
