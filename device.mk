@@ -55,7 +55,8 @@ PRODUCT_PACKAGES += \
     TelephonyResCommon \
     TelephonyResProduct \
     WifiResCommon \
-    WifiResTarget
+    WifiResTarget \
+    NfcOverlay
 
 # A/B
 ifeq ($(TARGET_IS_VAB),true)
