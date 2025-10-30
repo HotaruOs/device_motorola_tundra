@@ -207,10 +207,10 @@ debug.sf.high_fps_late_app_phase_offset_ns=1000000
 debug.sf.high_fps_late_sf_phase_offset_ns=-4000000
 debug.sf.hw=0
 debug.sf.latch_unsignaled=1
-persist.sys.sf.color_mode=0
+persist.sys.sf.color_mode=9
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.force_brightness_capability=1
-persist.sys.sf.native_mode=1
+persist.sys.sf.native_mode=2
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
@@ -304,6 +304,7 @@ ro.soc.manufacturer=QTI
 debug.stagefright.c2inputsurface=-1
 
 # Surfaceflinger
+persist.sys.wide_color_apps=1
 ro.sf.lcd_density=400
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.has_HDR_display=true
